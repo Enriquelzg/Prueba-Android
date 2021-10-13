@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Android def</string>
     <string name="self_destruct">Button</string>
+    <String name="texto_desp">Adios</String>
 </resources>

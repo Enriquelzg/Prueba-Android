@@ -4,24 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Eblue"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:layout_width="51dp"
-        android:layout_height="38dp"
-        android:text="Hola"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/texto_hito"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@color/Prueba"
+        android:text="Bienvenido"
+        tmargin
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="189dp" />
+
 
     <Button
         android:id="@+id/button_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/self_destruct"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="414dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_width="149dp"
+        android:layout_height="82dp"
+        android:backgroundTint="@color/Eclara"
+        android:text="Empezar"
+        android:textColor="@color/Edark"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="453dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
