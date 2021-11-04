@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textorecogido" type="id" />
+    <item name="change" type="id" />
+    <item name="apellidoRecogido" type="id" />
+</resources>

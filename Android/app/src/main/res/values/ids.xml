@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="texto_hito" type="id">hito</item>
-    <item name="boton_hito" type="id" />
-    <item name="llegatexto" type="id" />
-</resources>

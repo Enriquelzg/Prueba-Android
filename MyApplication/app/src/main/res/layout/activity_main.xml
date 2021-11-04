@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Eblue"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/texto_hito"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@color/Prueba"
+        android:text="DATOS"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        />
+
+    <EditText
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:inputType="text"
+        android:text="Nombre"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:inputType="text"
+        android:text="Apellidos"
+        android:textSize="40dp" />
+    <EditText
+        android:id="@+id/Numero"
+        android:layout_marginTop="225dp"
+        android:hint="Número"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:textSize="40dp"
+        />
+
+
+    <Button
+        android:id="@+id/boton_hito"
+        android:layout_width="149dp"
+        android:layout_height="82dp"
+        android:backgroundTint="@color/Eclara"
+        android:text="Empezar"
+        android:textColor="@color/Edark"
+        android:textSize="20dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="500dp"
+        />
+
+
+</RelativeLayout>
