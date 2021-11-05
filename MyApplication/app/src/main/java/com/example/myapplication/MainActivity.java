@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView texto;
+    private TextView texto,nom,apell,num;
     private Button boton;
-    private EditText textoCambio,apellidos,numero;
+    private EditText apellidos,numero,nombre;
     private TinyDB tinyDB;
 
 
@@ -23,18 +23,33 @@ public class MainActivity extends AppCompatActivity {
 
         texto = findViewById(R.id.texto_hito);
         boton = findViewById(R.id.boton_hito);
-        EditText textoCambio = findViewById(R.id.change);
+
         EditText apellidos = findViewById(R.id.apellido);
         EditText numero = findViewById(R.id.Numero);
+        EditText nombre = findViewById(R.id.nombre);
+        TextView nom = findViewById(R.id.nom);
+        TextView apell = findViewById(R.id.apell);
+        TextView num = findViewById(R.id.num);
 
 
 
+        tinyDB = new TinyDB(this);
+        Usuario anterior = tinyDB.getObject("lastUser", Usuario.class);
+        try {
+            nom.setText(anterior.getNombre());
+            apell.setText(anterior.getApellidos());
+            num.setText(anterior.getNumero());
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
         boton.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v) {
-                Usuario primero = new Usuario(nombre.getText);
+                Usuario primero = new Usuario(nombre.getText().toString(),apellidos.getText().toString(),numero.getText().toString());
                 Intent intent = new Intent(MainActivity.this, Cambio.class);
-                intent.putExtra("Texto intent", textoCambio.getText().toString());
+                intent.putExtra("texto usuario", primero);
+                tinyDB.putObject("lastUser",primero);
                 startActivity(intent);
             }
         });

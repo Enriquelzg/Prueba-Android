@@ -10,19 +10,23 @@ import android.widget.TextView;
 
 public class Cambio extends AppCompatActivity {
 
-    private TextView llegatexto, llegaApellido;
+    private TextView nombre, apellido, numero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cambio);
 
-        llegatexto = findViewById(R.id.textorecogido);
-        llegaApellido = findViewById(R.id.apellidoRecogido);
+        nombre = findViewById(R.id.nombreRecogido);
+        apellido = findViewById(R.id.apellidoRecogido);
+        numero = findViewById(R.id.numeroRecogido);
 
         Intent intent = getIntent();
-        llegatexto.setText(intent.getStringExtra("Texto intent"));
-        llegaApellido.setText(intent.getStringExtra("Texto apellido"));
+        Usuario getExtra = (Usuario) intent.getSerializableExtra("texto usuario");
+        nombre.setText(getExtra.getNombre());
+        apellido.setText(getExtra.getApellidos());
+        numero.setText(getExtra.getNumero());
+
     }
 }
 

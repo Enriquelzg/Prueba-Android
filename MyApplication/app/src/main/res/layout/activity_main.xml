@@ -21,12 +21,12 @@
         />
 
     <EditText
-        android:id="@+id/change"
+        android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:inputType="text"
-        android:text="Nombre"
+        android:hint="Nombre"
         android:textSize="40dp" />
 
     <EditText
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:inputType="text"
-        android:text="Apellidos"
+        android:hint="Apellidos"
         android:textSize="40dp" />
     <EditText
         android:id="@+id/Numero"
@@ -57,7 +57,42 @@
         android:textColor="@color/Edark"
         android:textSize="20dp"
         android:layout_marginLeft="125dp"
+        android:layout_marginTop="400dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Último usuario introducido"
+        android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:text="Nombre"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:id="@+id/apell"
+        android:layout_width="wrap_content"
+        android:text="Apellido"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="200dp"
+        />
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:text="Número"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="50dp"
         />
 
 

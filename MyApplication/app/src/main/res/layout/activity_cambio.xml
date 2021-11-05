@@ -13,39 +13,32 @@
         android:layout_height="wrap_content"
         android:text="Datos del usuario"
         android:textColor="@color/black"
-
         android:textSize="50sp"
+
         />
 
     <TextView
+        android:id="@+id/nombreRecogido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre"
+        android:hint="Nombre"
         android:textColor="@color/black"
 
         android:textSize="50sp" />
     <TextView
+        android:id="@+id/apellidoRecogido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Apellidos"
+        android:hint="Apellidos"
         android:textColor="@color/black"
 
         android:textSize="50sp" />
     <TextView
+        android:id="@+id/numeroRecogido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Correo"
+        android:hint="Numero"
         android:textColor="@color/black"
-
         android:textSize="50sp" />
-
-    <TextView
-        android:id="@+id/textorecogido"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:inputType="text"
-        android:text="Cambio de Activity"
-        android:textSize="40dp"
-        />
 
 </LinearLayout>

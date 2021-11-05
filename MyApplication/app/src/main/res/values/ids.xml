@@ -3,4 +3,6 @@
     <item name="textorecogido" type="id" />
     <item name="change" type="id" />
     <item name="apellidoRecogido" type="id" />
+    <item name="nombre" type="id" />
+    <item name="numeroRecogido" type="id" />
 </resources>
